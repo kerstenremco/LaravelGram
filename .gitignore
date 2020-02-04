@@ -13,3 +13,5 @@ database/database.sqlite
 public/storage
 remco.txt
 demodb heroku.sql
+
+database/database.sqlite
