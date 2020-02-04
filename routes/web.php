@@ -20,11 +20,11 @@ Auth::routes();
 Route::post('follow/{user}', 'FollowsController@store');
 
 Route::get('/', 'PostsController@index');
-Route::get('/p/create', 'PostsController@create')->middleware('demoAccess');;
-Route::post('/p', 'PostsController@store');
+Route::get('/p/create', 'PostsController@create')->middleware('demoAccess');
+Route::post('/p', 'PostsController@store')->middleware('demoAccess');
 Route::get('/p/{post}', 'PostsController@show');
 
 
 Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
 Route::get('/profile/{user}/edit', 'ProfilesController@edit')->name('profile.edit');
-Route::patch('/profile/{user}', 'ProfilesController@update')->name('profile.update');
+Route::patch('/profile/{user}', 'ProfilesController@update')->middleware('demoAccess')->name('profile.update');
