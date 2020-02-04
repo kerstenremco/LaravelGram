@@ -1,3 +1,19 @@
+LaravelGram is een simpele Laravel app gebaseerd op InstaGram.
+
+Een live-demo is te vinden op [http://laravelgram.herokuapp.com](http://laravelgram.herokuapp.com)
+Het kan even duren voordat de webpagina opent aangezien deze op een gratis Dyno draait.
+
+### Installatie
+
+## Laravel installatie
+
+Deze applicatie is gebouwd in Laravel. Run eerst `npm install`
+
+## Database
+
+Voeg in .env een eigen database toe. (bijvoorbeeld SQLite)
+Voer `php artisan migrate` uit om de database te initialiseren.
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
